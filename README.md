@@ -6,6 +6,8 @@ A coding playground for sharpening programming skills and exploring new concepts
 
 ### To clean & compile java classes, use the following gradle command:
 
+### For Java
+
 #### Clean
 
 ```console
@@ -28,4 +30,16 @@ A coding playground for sharpening programming skills and exploring new concepts
 
 ```console
 ./gradlew :kotlin-playground:compileKotlin
+```
+
+#### Compile
+
+```console
+./gradlew :kotlin-playground:compileKotlin
+```
+
+#### Test:
+
+```console
+./gradlew :kotlin-playground:test
 ```
