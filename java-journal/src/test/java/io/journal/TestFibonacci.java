@@ -8,6 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestFibonacci {
     @Test
     public void testFibonacci() {
-        assertEquals(Fibonacci.fibonacciRecursive(9, 0, 1), 34);
+        assertEquals(34, Fibonacci.fibonacciRecursive(9, 0, 1));
     }
 }
