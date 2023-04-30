@@ -1,31 +1,31 @@
-# Notes on JVM (Java, Kotlin, SpringBoot) Topics
+# Notes on Programming topics: A Personal Guide on Java, Kotlin, and Web Development (SpringBoot)
 
-A training repository to practice and review programming topics 
+A coding playground for sharpening programming skills and exploring new concepts.
 
-### Running the project Using Gradle:
+### To run the project via Gradle:
 
 ### To clean & compile java classes, use the following gradle command:
 
 #### Clean
 
 ```console
-./gradlew :java-journal:clean
+./gradlew :java-playground:clean
 ```
 
 #### Compile
 
 ```console
-./gradlew :java-journal:compileJava
+./gradlew :java-playground:compileJava
 ```
 
 #### Test:
 
 ```console
-./gradlew :java-journal:test
+./gradlew :java-playground:test
 ```
 
 ### For Kotlin
 
 ```console
-./gradlew :kotlin-journal:compileKotlin
+./gradlew :kotlin-playground:compileKotlin
 ```

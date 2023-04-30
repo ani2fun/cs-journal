@@ -6,6 +6,6 @@ pluginManagement {
 
 rootProject.name = "java-kotlin-journal"
 include("springbootapp")
-include("java-journal")
-include("kotlin-journal")
+include("java-playground")
+include("kotlin-playground")
 
