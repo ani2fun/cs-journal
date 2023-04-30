@@ -1,4 +1,6 @@
-# Review Notes on Java Topics
+# Notes on JVM (Java, Kotlin, SpringBoot) Topics
+
+A training repository to practice and review programming topics 
 
 ### Running the project Using Gradle:
 
