@@ -48,3 +48,12 @@ class MedianOfAges {
         System.out.println("The recommended content will be for ages under: " + MedianOfAges.findMedian());
     }
 }
+
+/*
+Output:
+
+The recommended content will be for ages under: 28.5
+The recommended content will be for ages under: 30.0
+The recommended content will be for ages under: 27.5
+
+*/
