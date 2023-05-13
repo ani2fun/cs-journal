@@ -1,6 +1,6 @@
 package io.journal;
 
-import io.journal.tutorials.recursion.Fibonacci;
+import io.journal.javabasics.recursion.Fibonacci;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
