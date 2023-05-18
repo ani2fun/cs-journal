@@ -4,8 +4,9 @@ pluginManagement {
     includeBuild("build-logic")
 }
 
-rootProject.name = "java-kotlin-journal"
+rootProject.name = "cs-journal"
 include("java-playground")
-//include("springbootapp")
-//include("kotlin-playground")
+include("kotlin-playground")
+include("scala-playground")
+include("springbootapp")
 

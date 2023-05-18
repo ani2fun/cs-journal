@@ -29,6 +29,12 @@ dependencies {
         "kordamp-jacoco-plugin",
         "ktlint-plugin",
         "org-openapi-generator",
+        // Scala
+        "scala-library",
+        "scala-test",
+        "scala-test-plus",
+        "junit",
+        "scala-xml"
     )
 
     list.map {

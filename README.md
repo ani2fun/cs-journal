@@ -43,3 +43,15 @@ A coding playground for sharpening programming skills and exploring new concepts
 ```console
 ./gradlew :kotlin-playground:test
 ```
+
+
+### For Scala
+```console
+./gradlew :scala-playground:compileScala
+```
+
+#### Test:
+
+```console
+./gradlew :scala-playground:test
+```

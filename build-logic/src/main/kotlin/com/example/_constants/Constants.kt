@@ -8,6 +8,8 @@ const val JDK_VERSION = "17"
 // const val KOTLIN_VERSION = "1.7"
 const val KOTLIN_VERSION = "1.8"
 
+const val SCALA_VERSION = "2.13.10"
+
 // https://en.wikipedia.org/wiki/UTF-8
 const val CHARACTER_ENCODING = "UTF-8"
 

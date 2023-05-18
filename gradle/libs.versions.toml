@@ -17,6 +17,12 @@ cucumberJunit = "7.11.1"
 karateJunit5 = "1.3.1"
 karateCore = "1.3.1"
 cucumberReporting = "5.7.5"
+#Scala Versions
+scalaLibrary = "2.13.10"
+scalaTest = "3.2.14"
+junit = "4.13.2"
+scalaTestPlus = "3.2.2.0"
+scalaXml = "1.2.0"
 #####################################################################################
 
 [libraries]
@@ -50,3 +56,10 @@ karate-junit5 = { module = "com.intuit.karate:karate-junit5", version.ref = "kar
 karate-core = { module = "com.intuit.karate:karate-core", version.ref = "karateCore" }
 cucumber-reporting = { module = "net.masterthought:cucumber-reporting", version.ref = "cucumberReporting" }
 #####################################################################################
+
+# SCALA
+scala-library = { module = "org.scala-lang:scala-library", version.ref = "scalaLibrary" }
+scala-test = { module = "org.scalatest:scalatest_2.13", version.ref = "scalaTest" }
+scala-test-plus = { module = "org.scalatestplus:junit-4-13_2.13", version.ref = "scalaTestPlus" }
+junit = { module = "junit:junit", version.ref = "junit" }
+scala-xml = { module = "org.scala-lang.modules:scala-xml_2.13", version.ref = "scalaXml" }
