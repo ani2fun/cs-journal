@@ -46,10 +46,11 @@ A coding playground for sharpening programming skills and exploring new concepts
 
 
 ### For Scala
+
+#### Compile
 ```console
 ./gradlew :scala-playground:compileScala
 ```
-
 #### Test:
 
 ```console
