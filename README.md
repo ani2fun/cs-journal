@@ -1,4 +1,4 @@
-# Notes on Programming topics: A Personal Guide on Java, Kotlin, and Web Development (SpringBoot)
+# Notes on Programming topics: A Personal Guide on JVM languages and Web Development
 
 A coding playground for sharpening programming skills and exploring new concepts.
 
