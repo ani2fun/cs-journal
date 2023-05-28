@@ -1,4 +1,4 @@
-package io.journal.dsa.recursion;
+package io.journal.javabasics.recursion;
 
 public class TowerOfHanoi {
 
