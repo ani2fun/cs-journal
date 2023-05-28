@@ -6,10 +6,14 @@ plugins {
 val jarsInResources = fileTree(projectDir.resolve("src/main/resources")).include("*.jar")
 dependencies {
     // Manually added External Lib
-    "implementation"(jarsInResources)
+    implementation(jarsInResources)
 
-    "implementation"("com.opencsv:opencsv:5.7.1")
-    "implementation"("org.jsoup:jsoup:1.15.4")
+    implementation("com.opencsv:opencsv:5.7.1")
+    implementation("org.jsoup:jsoup:1.15.4")
+}
+
+dependencies {
+
 }
 
 // Name of the ZIP file to Submit
