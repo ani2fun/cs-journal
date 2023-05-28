@@ -6,15 +6,14 @@ plugins {
 val jarsInResources = fileTree(projectDir.resolve("src/main/resources")).include("*.jar")
 dependencies {
     // Manually added External Lib
-    implementation(jarsInResources)
+    "implementation"(jarsInResources)
 
-    implementation("com.opencsv:opencsv:5.7.1")
-    implementation("org.jsoup:jsoup:1.15.4")
+    "implementation"("com.opencsv:opencsv:5.7.1")
+    "implementation"("org.jsoup:jsoup:1.15.4")
 }
 
 // Name of the ZIP file to Submit
 val nameOfZip = "hello"
-
 // Source Directory - change dir paths: "src/main/java/io/journal/algocs/submissions/$DIR_NAME"
 val sourceDirAsFile = layout.projectDirectory.dir("src/main/java/io/journal/algocs/submissions/_1").asFile
 // Destination Directory: build/tmp/$nameOfZip
