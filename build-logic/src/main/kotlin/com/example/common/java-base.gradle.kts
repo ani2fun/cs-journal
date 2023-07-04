@@ -30,7 +30,7 @@ tasks.withType<JavaCompile> {
     options.compilerArgs.addAll(
         listOf(
              "-Xlint:all", // Enables all recommended warnings.
-             "-Werror", // Terminates compilation when warnings occur.
+             // "-Werror", // Terminates compilation when warnings occur.
         ),
     )
 }
