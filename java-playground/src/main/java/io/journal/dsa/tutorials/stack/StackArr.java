@@ -1,5 +1,6 @@
 package io.journal.dsa.tutorials.stack;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 // using arraylist
@@ -20,29 +21,31 @@ public class StackArr<T> {
         A = a;
     }
 
-    void push(T data) {
-        if (top == size - 1)
+    void push(T data) throws StackOverflow {
+        if (top == size - 1) {
             System.out.println("StackArray-Overflow!");
-        else {
+            throw new StackOverflow();
+        } else {
             top++;
             A.add(data); // Creating new element
         }
     }
 
-    T top() {
+    T top() throws StackUnderflow {
         // If stack is empty
         if (top == -1) {
             System.out.println("StackArray Underflow");
-            return null;
+            throw new StackUnderflow();
         } else
             return A.get(top);
     }
 
-    T pop() {
+    T pop() throws StackUnderflow {
         T data = null;
-        if (top == -1)
+        if (top == -1) {
             System.out.println("StackArray Underflow");
-        else {
+            throw new StackUnderflow();
+        } else {
             data = A.get(top);
             top--;
         }
@@ -69,5 +72,20 @@ public class StackArr<T> {
 
     public void setTop(int top) {
         this.top = top;
+    }
+}
+
+
+class StackUnderflow extends Exception implements Serializable {
+    private static final long serialVersionUID = 10002L;
+    public String toString() {
+        return "Stack is Empty!";
+    }
+}
+
+class StackOverflow extends Exception implements Serializable {
+    private static final long serialVersionUID = 10001L;
+    public String toString() {
+        return "Stack is Full!";
     }
 }
