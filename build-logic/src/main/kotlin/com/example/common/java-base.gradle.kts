@@ -29,8 +29,7 @@ tasks.withType<JavaCompile> {
     // See: https://docs.oracle.com/en/java/javase/12/tools/javac.html
     options.compilerArgs.addAll(
         listOf(
-//             "-Xlint:all", // Enables all recommended warnings.
-//             "-Werror", // Terminates compilation when warnings occur.
+             "-Xlint:all", // Enables all recommended warnings.
         ),
     )
 }
