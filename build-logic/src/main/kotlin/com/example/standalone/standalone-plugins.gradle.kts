@@ -32,7 +32,7 @@ dependencyCheck {
     this.suppressionFile = "${project.findProject(":build-logic")?.resources}/dependencycheck-suppressions.xml"
 
     // TODO: CHANGE OUTPUT DIR TO SUITABLE LOCATION. Currently it's in project app.
-    this.outputDirectory = "${project.findProject(":app")?.buildDir}/security-report"
+    this.outputDirectory = "${project.findProject(":app")?.getLayout()?.getBuildDirectory()}/security-report"
 }
 
 // --- printCoverage ---

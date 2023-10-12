@@ -1,6 +1,6 @@
 [versions]
-kotlinGradlePlugin = "1.8.10"
-springBoot = "3.0.4"
+kotlinGradlePlugin = "1.9.10"
+springBoot = "3.0.5"
 
 gitProperties = "2.4.1"
 dependencyCheck = "8.1.2"

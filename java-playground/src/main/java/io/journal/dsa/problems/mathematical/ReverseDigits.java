@@ -18,25 +18,35 @@ package io.journal.dsa.problems.mathematical;
  */
 public class ReverseDigits {
     public static void main(String[] args) {
-        ReverseDigits l = new ReverseDigits();
-        System.out.println(l.run(54321));
+        ReverseDigits reverseDigits = new ReverseDigits();
+        System.out.println(reverseDigits.iterativeVersion(54321));
+        System.out.println(reverseDigits.recursiveVersion(123456789));
+        System.out.println(reverseDigits.reverseDigits(54321));
     }
 
-    private String run(int n) {
+    private String iterativeVersion(int n) {
         int iterationCount = 0;
         int rev;
         rev = 0;
-        System.out.println("n: " + n + " ,rev: " + rev + " ,i: " + iterationCount);
+        // System.out.println("n: " + n + " ,rev: " + rev + " ,i: " + iterationCount);
         while (n > 0) {
             iterationCount++;
-
             rev = rev * 10 + n % 10;
             n = n / 10;
-
-
-            System.out.println("n: " + n + " ,rev: " + rev + " ,i: " + iterationCount);
-
+            // System.out.println("n: " + n + " ,rev: " + rev + " ,i: " + iterationCount);
         }
         return "n is: " + n + " , rev is: " + rev + " ,after " + iterationCount + " iteration ";
+    }
+    // Less efficient code snippet, as it involves more string operations, conversions, and recursive calls
+    private int recursiveVersion(int n) {
+        if (n == 0) return 0;
+        return Integer.parseInt(
+                ((n % 10) + String.valueOf(recursiveVersion(n / 10))
+                ).substring(0, String.valueOf(n).length()));
+    }
+
+    private int reverseDigits(int n) {
+        StringBuilder buffer = new StringBuilder(String.valueOf(n));
+        return Integer.parseInt(buffer.reverse().toString());
     }
 }

@@ -1,0 +1,12 @@
+spring:
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  thymeleaf:
+    cache: false
+    enabled: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+  application:
+    name: Bootstrap Spring-Boot

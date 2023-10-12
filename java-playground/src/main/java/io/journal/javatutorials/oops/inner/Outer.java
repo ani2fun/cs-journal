@@ -8,6 +8,14 @@ class Outer {
 
         void innerDisplay() {
             System.out.println("Inner Display");
+            System.out.println("x: " + x + " , y: "+y);
+        }
+
+        class InnerInner {
+            void innerinnerDisplay() {
+                System.out.println("Inner Inner Display");
+                System.out.println("x: " + x + " , y: "+y);
+            }
         }
     }
 

@@ -8,5 +8,5 @@ rootProject.name = "cs-journal"
 include("java-playground")
 include("kotlin-playground")
 include("scala-playground")
-include("springbootapp")
+include("spring-boot-app")
 
